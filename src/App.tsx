@@ -12,10 +12,10 @@ function App() {
     const increment = () => setValue(value + 1);
     const decrement = () => setValue(value - 1);
 
-    const onChangeName = (event) => {
+    const onChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
         setName(event.target.value);
     };
-    const onChangeNickname = (event) => {
+    const onChangeNickname = (event: React.ChangeEvent<HTMLInputElement>) => {
         setNickname(event.target.value);
     };
 
